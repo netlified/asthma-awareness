@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asthma Symptoms Awareness</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <style>
+        #main{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        #main .box{
+            background-color: rgb(217, 243, 243);
+            width: 300px;
+            height: 300px;
+            border-radius: 150px;
+            background-image: url('images/developer.jpg');
+            background-position: center;
+            border: 3px solid floralwhite;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+          
+        }
+        #main .box:nth-child(2){
+            width: 700px;
+            border-radius: 20px;
+            padding: 30px;
+            font-size: larger;
+            background-image: url('');
+
+        }
+        @media only screen and (max-width:600px){
+            #main{
+                flex-direction: column;
+            }
+            #main .box:nth-child(2){
+                width: 300px;
+        }
+}
+
+    </style>
+</head>
+<body>
+    <header>    
+        <div class="menuDiv" onclick="menuShow(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+      
+        <p id="headP"> Asthma Symptoms App</p>
+      
+    </header>
+    <nav id="nav">
+        <ul>
+            <li> <a href="index.html"> <i class="fas fa-home"></i> HOME</a></li>
+            <li> <a href="video.html"> <i class="fas fa-video"></i> VIDEOS</a></li>
+            <li> <a href="tips.html"> <i class="fas fa-campground"></i> TIPS</a></li>
+            <li> <a href="facts.html"> <i class="fas fa-box-open"></i>FACTS </a></li>
+            <li> <a href="treatment.html"> <i class="fas fa-prescription-bottle-alt"></i> TREATMENT </a></li>
+            <li> <a href="about.html"> <i class="far fa-address-card"></i> ABOUT</a></li>
+            
+            
+        </ul>
+    </nav>
+
+    <div id="main">
+        <div class="box"></div>
+        <div class="box">
+            This app is developed by Naty Baan to help asthmatic people be aware regarding their asthma.
+                <div class="icons">
+                    
+                    <a href="#" style="color: blue;"><i class="fab fa-facebook"></i></a>
+                    <a href="#" style="color: skyblue;"><i class="fab fa-facebook-messenger"></i></a>
+                    <a href="#" style="color: red;"><i class="fab fa-youtube"></i></a>
+                    <a href="#" style="color: rgb(75, 213, 231);"><i class="fab fa-twitter"></i></a>
+                </div>
+        </div>
+  
+    </div>
+
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
